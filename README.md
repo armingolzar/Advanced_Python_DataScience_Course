@@ -1,5 +1,5 @@
-# Advance_Python_Data
-This is a repo for advanced python and data
+# Advanced_Python_Data
+This is a repo for advanced python and working with data
  # what we will cover in this repo?
  1. tutorail for os, glob libraries
  2. tutorail for main function in python
