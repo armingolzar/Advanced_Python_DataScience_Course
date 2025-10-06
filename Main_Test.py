@@ -1,8 +1,8 @@
-# import Main_Tutorial
+import Main_Tutorial
 
-# Main_Tutorial.Hi()
+Main_Tutorial.Hi()
 
-# print(Main_Tutorial.add(8, 9))
+print(Main_Tutorial.add(8, 9))
 
 """
 So, as you can see there is a big problem here because when we import another python file, python run

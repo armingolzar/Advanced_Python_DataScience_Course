@@ -2,7 +2,7 @@
 What is Argparse ?
 
 The argparse module makes it easy to write user-friendly command-line interfaces.
-The program defines what arguments it requires, 
+The program defines what arguments is required, 
 and argparse will figure out how to parse those out of sys.argv .
 The argparse module also automatically generates help and usage messages.
 
@@ -59,7 +59,7 @@ The argparse module also automatically generates help and usage messages.
 
 """
 Attention, we can use -f for abbreviation of file name but after that we should use -- and full name of the 
-argument and remember this argument is optional due to it's notation * -f *. But if do not use - the
+argument and remember this argument is optional due to it's notation * -f *. But if we do not use - the
 argument will be required
 """
 # Step 5 
@@ -91,8 +91,10 @@ after their label(abbriviation or --fullname).
 # argument = parser.parse_args()
 # print(argument)
 # file = argument.filename
+# copy_term = argument.copy
 # file1 = argument.filepath
 # print(file)
+# print(copy_term)
 # print(file1)
 
 # End of the step
@@ -170,7 +172,7 @@ And for store_false it is reverse
 
 """
 What is the argument dest?
-with tihs argument we easily can acsses the values of our inputs with costomize name.
+with this argument we easily can acsses the values of our inputs with customized name.
 """
 # Step 10
 
@@ -246,7 +248,7 @@ possible give us a nice error.
 # parser = argparse.ArgumentParser(description= 'This is a tutorail for argument parser.')
 # parser.add_argument('filename', help='The name of the file .')
 # parser.add_argument('-c', '--copy', dest='n_d', metavar='N', help='Make N copy.', type=int)
-# parser.add_argument('-d', '--date', help='the date of file', type=datetime.date.fromisoformat)
+# parser.add_argument('-d', '--date', help='the date of the file', type=datetime.date.fromisoformat)
 # parser.add_argument('-w','--wake_up', action='store_true', help='has she woken up?.')
 # parser.add_argument('-v', '--version', action='version', help='The version of the file.', version= 'python 10.2')
 
@@ -397,7 +399,7 @@ argument * return an empty list, but + return an error.
 # Step 19
 
 # import argparse
-
+# import pprint
 
 # parser = argparse.ArgumentParser(description= 'This is a tutorail for argument parser.')
 # parser.add_argument('filename', nargs='*', help='The name of the file.')
@@ -422,7 +424,7 @@ argument * return an empty list, but + return an error.
 
 
 # parser = argparse.ArgumentParser(description= 'This is a tutorail for argument parser.')
-# parser.add_argument('filename', nargs='*', help='The name of the file.')
+# parser.add_argument('filename', nargs='+', help='The name of the file.')
 # parser.add_argument('-c', '--copy', dest='n_d', metavar='N', help='Make N copy.', type=int)
 # parser.add_argument('-w','--wake_up', action='store_true', help='has she woken up?.')
 # parser.add_argument('-v', '--version', action='version', help='The version of the file.', version= 'python 10.2')

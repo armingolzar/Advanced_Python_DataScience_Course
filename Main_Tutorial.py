@@ -127,6 +127,7 @@ and errors
 # def main():
 #     Hi()
 #     print(add(5, 7))
+#     # armin = 'armin'
 #     print(sub(7, 5))
 #     print('Done :)')
 #     armin = 'armin'
@@ -140,22 +141,23 @@ and errors
 Also, you can write main function and run all code in importing.
 """
 # Sixth Step 6
-# def Hi():
-#     print('Hi, how are you?')
+armin = 'armin'
+def Hi():
+    print('Hi, how are you?')
 
-# def add(x, y):
-#     return x + y
+def add(x, y):
+    return x + y
 
-# def sub(x, y):
-#     return x - y 
+def sub(x, y):
+    return x - y 
 
-# def main():
-#     Hi()
-#     print(add(5, 7))
-#     print(sub(7, 5))
-#     print('Done :)')
+def main():
+    Hi()
+    print(add(5, 7))
+    print(sub(7, 5))
+    print('Done :)')
 
-# if __name__ == 'Main_Tutorial':
-#     main()
+if __name__ == 'Main_Tutorial':
+    main()
 
 # That's all about main function :)), Good Luck.
