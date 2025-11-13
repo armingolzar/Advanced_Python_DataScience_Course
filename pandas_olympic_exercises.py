@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # Practis 1: Load the two files, `olympics_events.csv` and `olympics_games.csv`, and display the first 10 lines of each data frame.
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
 
 # print(olympic_dataset.head(10))
 
@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 
 # print('\n')
 
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # print(olympic_games_dataset.head(10))
 
@@ -26,8 +26,8 @@ import matplotlib.pyplot as plt
 # Practice 2: Merge the two data frames on the `GamesID` and `ID` columns. Join = **outer**. Drop the now-unnecessary id-columns afterwards.
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
@@ -43,22 +43,22 @@ import matplotlib.pyplot as plt
 # 1. In which years did the Federation of Malaya compete in the Olympics?
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
 # complete_olympic_dataset.drop(columns='ID', inplace=True)
 
 
-# unique_years_of_participating_of_malaya_dataset = len(complete_olympic_dataset.loc[complete_olympic_dataset['Nationality'] == 'MAL', 'Year'].unique())
+# unique_years_of_participating_of_malaya_dataset = complete_olympic_dataset.loc[complete_olympic_dataset['Nationality'] == 'MAL', 'Year'].unique()
 # print(unique_years_of_participating_of_malaya_dataset)
 
 # ####### Attention: also remmember nunique() method for getting the unique number of a thing in dataframe not series
 # see below for that 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
@@ -94,8 +94,8 @@ import matplotlib.pyplot as plt
 # Practice 4: How many athletes did they send?
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
@@ -111,8 +111,8 @@ import matplotlib.pyplot as plt
 # Practice 5: Who were the first countries to participate in the Olympic games (as per this data set)?
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
@@ -132,8 +132,8 @@ import matplotlib.pyplot as plt
 # Practice 6: How many men and women has Malaysia (`MAS`) sent to the Olympics in total? Keep in mind that athletes can participate in multiple events and multiple years. Each person should only ever be counted once.
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
@@ -151,8 +151,8 @@ import matplotlib.pyplot as plt
 # Practice 7: How many men and women has Malaysia (`MAS`) sent to the Olympics each year?
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
@@ -176,8 +176,8 @@ import matplotlib.pyplot as plt
 # practice 8: How many gold medals has each country won? How about Malaysia (`MAS`)?
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
@@ -197,8 +197,8 @@ import matplotlib.pyplot as plt
 # Practice 9: What is the median age of gold medalists?
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
@@ -213,37 +213,37 @@ import matplotlib.pyplot as plt
 
 # Practice 10: Look at only swimmers. How has the mean weight of all competitors changed throughout the years? Use `*.plot()` to get a visual sense of the trend.
 
-olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
-complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
+# complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
-complete_olympic_dataset.drop(columns='ID', inplace=True)
+# complete_olympic_dataset.drop(columns='ID', inplace=True)
 
-swimmers = complete_olympic_dataset.loc[complete_olympic_dataset['Sport'] == 'Swimming', ['Weight', 'Year']]
+# swimmers = complete_olympic_dataset.loc[complete_olympic_dataset['Sport'] == 'Swimming', ['Weight', 'Year']]
 
-swimmers_weight_groupbied = swimmers.groupby('Year').mean()
-print(type(swimmers_weight_groupbied))
+# swimmers_weight_groupbied = swimmers.groupby('Year').mean()
+# print(type(swimmers_weight_groupbied))
 
-weight_means_groupbied = []
-for x in swimmers_weight_groupbied['Weight']:
-    if pd.isna(x) == True:
-        weight_means_groupbied.append(0)
-    else:
-        weight_means_groupbied.append(x)
+# weight_means_groupbied = []
+# for x in swimmers_weight_groupbied['Weight']:
+#     if pd.isna(x) == True:
+#         weight_means_groupbied.append(0)
+#     else:
+#         weight_means_groupbied.append(x)
 
-print(weight_means_groupbied)
-print(len(weight_means_groupbied))
-years_indexes = swimmers_weight_groupbied.index.to_list()
-print(years_indexes)
+# print(weight_means_groupbied)
+# print(len(weight_means_groupbied))
+# years_indexes = swimmers_weight_groupbied.index.to_list()
+# print(years_indexes)
 
-plt.plot(years_indexes, weight_means_groupbied, color = 'green', label = 'KG', linewidth=2)
-plt.xlabel('Years')
-plt.ylabel('Weights')
-plt.title('Change in weights of swimmers during years')
-plt.legend()
-plt.grid(True)
-plt.show()
+# plt.plot(years_indexes, weight_means_groupbied, color = 'green', label = 'KG', linewidth=2)
+# plt.xlabel('Years')
+# plt.ylabel('Weights')
+# plt.title('Change in weights of swimmers during years')
+# plt.legend()
+# plt.grid(True)
+# plt.show()
 
 # End of the practice 10
 
@@ -289,8 +289,8 @@ plt.show()
 # Practice 12: What country has the most gold medals in wrestling?
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
@@ -308,8 +308,8 @@ plt.show()
 # Practice 13: How many different types of events have ever been held for fencing?
 
 
-# olympic_dataset = pd.read_csv(r'../practice_files/olympics_events.csv')
-# olympic_games_dataset = pd.read_csv(r'../practice_files/olympics_games.csv')
+# olympic_dataset = pd.read_csv('.\\olympics_events.csv')
+# olympic_games_dataset = pd.read_csv('.\\olympics_games.csv')
 
 # complete_olympic_dataset = pd.merge(olympic_dataset, olympic_games_dataset, left_on='GamesID', right_on='ID', how='outer')
 
